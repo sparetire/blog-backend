@@ -1,0 +1,39 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "blog backend",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start process.json --env prod",
+    "stop": "pm2 stop process.json --only blog-backend",
+    "restart": "pm2 restart process.json --only blog-backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparetire/blog-backend.git"
+  },
+  "keywords": [
+    "blog",
+    "backend",
+    "koa2"
+  ],
+  "author": "Sparetire",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sparetire/blog-backend/issues"
+  },
+  "homepage": "https://github.com/sparetire/blog-backend#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.0",
+    "eslint": "^3.18.0"
+  },
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-helmet": "^3.1.0",
+    "koa-multer": "^1.0.1",
+    "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0"
+  }
+}
